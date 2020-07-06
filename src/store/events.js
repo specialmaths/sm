@@ -66,7 +66,7 @@ const customEvents = [
         },
         partners: ["abc", "test2", "test3", "test4"],
         speakers: [
-            "princewill_okoroafor", "animoku_abdulwahab"
+            "princewill_okoroafor", "williams_okeke", "animoku_abdulwahab"
         ],
         team: [
             
@@ -136,7 +136,7 @@ const customEvents = [
         },
         partners: ["abc", "test2", "test3", "test4"],
         speakers: [
-            "princewill_okoroafor", "animoku_abdulwahab"
+            "princewill_okoroafor", "williams_okeke","animoku_abdulwahab"
         ],
         team: [
             

@@ -78,7 +78,7 @@ let localappservice = {
   getSpeaker: (id) => {
     let found = false
     return new Promise((resolve, reject) => {
-      people.forEach(person => {
+      instructors.forEach(person => {
         if (person.id == id) {
           found = true
           resolve({

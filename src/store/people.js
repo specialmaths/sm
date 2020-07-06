@@ -131,6 +131,28 @@ const instructors = [
             github: "https://github.com/pokoroafor",
             linkedin: ""},
             visible: true
+    },
+    {
+        bio: "Currently studying Mathematics at the Peoples’ Friendship University, Moscow, Russia. During his secondary school days, he represented Nigeria three times in IMO, winning 2 Honourable Mentions Awards. He is also a two-time PAMO Gold Medalist. In 2017, he finished in the top 5% of contestants in the American Mathematics Olympiad (AMC 12) and qualified for the prestigious AIME(American Invitational Mathematics Examination). Aside from Mathematics,Williams also likes engaging in critical thinking, playing video games and watching football matches.",
+        city: "",
+        company: {name: "School Name Here", url: ""},
+        country: "Russia",
+        designation: "Algebra",
+        email: "",
+        id: "williams_okeke",
+        image: "",
+        lastUpdatedBy: {id: "princewill_okoroafor", name: "Princewill Okoroafor"},
+        lastUpdatedOn: {seconds: 1592500886, nanoseconds: 352000000},
+        mbnumber: "",
+        name: "Williams Okechukwu Okeke",
+        socialLinks: {
+            medium: "", 
+            web: "", 
+            twitter: "", 
+            facebook: "https://facebook.com/", 
+            github: "https://github.com/",
+            linkedin: ""},
+            visible: true
     }
 ]
 
