@@ -1,6 +1,41 @@
 const people = [
     {
         active: true,
+        bio: "Hey, I am Princewill Okoroafor",
+        createdBy: {
+            id: "princewill_okoroafor",
+            name: "Princewill Okoroafor"
+        },
+        createdOn: {
+            nanoseconds: 249000000,
+            seconds: 1590076439
+        },
+        designation: "United States",
+        email: "pokoroafor@hmc.edu",
+        id: "princewill_okoroafor",
+        image: "https://me.pokoroafor.org/images/me_icon.jpg",
+        lastUpdatedBy: {
+            id: "",
+            name: ""
+        },
+        lastUpdatedOn: "",
+        mbnumber: "",
+        name: "Princewill Okoroafor",
+        password: "",
+        role: "Organizing Team",
+        socialLinks: {
+            facebook: "",
+            github: "",
+            linkedin: "",
+            medium: "",
+            twitter: "",
+            web: "https://me.pokoroafor.org",
+        },
+        uid: "F1nj86BQKzgCA8BDcnm6DMMBKq83",
+        visible: true
+    },
+    {
+        active: true,
         bio: "Hey, I am Princewill Okoroafor. ",
         createdBy: {
             id: "princewill_okoroafor",

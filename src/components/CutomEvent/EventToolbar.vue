@@ -13,6 +13,9 @@
       >{{eventName || ""}}</router-link>
     </v-toolbar-title>
     <v-spacer></v-spacer>
+    <v-btn text to="/home" class="ml-1" aria-label="Theme Switch BTN">
+      Home
+    </v-btn>
     <v-btn text to="/events" class="ml-1" aria-label="Theme Switch BTN">
       All Events
     </v-btn>
