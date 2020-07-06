@@ -57,11 +57,11 @@ const customEvents = [
             seconds: 1593207648
         },
         links: {
-            callforspeaker: "https://myaurapp.web.app",
-            facebook: "https://myaurapp.web.app",
+            // callforspeaker: "https://myaurapp.web.app",
+            // facebook: "https://myaurapp.web.app",
             feedback: "https://myaurapp.web.app",
-            meetup: "https://myaurapp.web.app",
-            registration: "https://myaurapp.web.app",
+            // meetup: "https://myaurapp.web.app",
+            registration: "https://paystack.com/pay/specialmaths-summer-2020",
             youtube: "https://myaurapp.web.app",
         },
         partners: ["abc", "test2", "test3", "test4"],

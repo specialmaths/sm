@@ -51,7 +51,7 @@
 
         <v-btn
           v-if="checkExistance(config.generalConfig.subscriptionLink,0)"
-          @click="$router.push(config.generalConfig.subscriptionLink)"
+          :href="config.generalConfig.subscriptionLink"
           aria-label="Subscribe"
           rounded
           rel="noreferrer"
