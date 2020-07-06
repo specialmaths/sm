@@ -8,8 +8,9 @@
                     class=" mb-3"
                     width="100%"
                 > -->
-                <video-embed :params="{autoplay: 1}" src="https://youtu.be/PluX0n8_XLY">
-                    <template v-slot:placeholder>
+                <iframe height="230px" width="330px" src="https://www.youtube.com/embed/PluX0n8_XLY?autoplay=1&cc_load_policy=1&controls=0&&modestbranding=1&loop=1" frameborder="0" allowfullscreen>
+                <!-- <video-embed :params="{autoplay: 1}" src="https://youtu.be/PluX0n8_XLY"> -->
+                    <!-- <template v-slot:placeholder>
                         <v-row
                         class="fill-height ma-0"
                         align="center"
@@ -17,8 +18,8 @@
                         >
                         <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
                         </v-row>
-                    </template>
-                </video-embed>
+                    </template> -->
+                </iframe>
                 <!-- </v-img> -->
             </v-col>
             <v-col md="8" sm="12" cols="12" class="py-0 my-0">
