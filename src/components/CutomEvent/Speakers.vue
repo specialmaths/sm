@@ -17,7 +17,7 @@
         <p
           class="mt-1 mb-0 google-font mt-0"
           style="font-size:80%"
-        >{{data.company.name | summery(20)}}</p>
+        >{{data.designation | summery(20)}}</p>
       </div>
     </template>
 

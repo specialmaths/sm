@@ -8,7 +8,7 @@
         :class="$vuetify.theme.dark == true?'darkModeCardFeatureEvent':'lightModeCardFeatureEvent'"
         class="pa-3 py-5 fill-height"
       >
-        <p class="google-font mb-0" style="font-size:90%">{{data.date | dateFilter}}</p>
+        <p class="google-font mb-0" style="font-size:90%">Starts {{data.date | dateFilter}}</p>
         <p class="google-font mb-0" style="font-size:120%">{{data.name | summary(25)}}</p>
         <p class="google-font mb-0" style="font-size:90%">{{data.venue.name | summary(20)}}</p>
         <v-spacer></v-spacer>

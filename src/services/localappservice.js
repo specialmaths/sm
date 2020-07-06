@@ -2,90 +2,46 @@ import firebase from '@/config/firebase'
 import config from '@/store/config'
 import blogs from '@/store/blogs'
 import {featureEvents, customEvents} from '@/store/events'
+import {instructors, people} from '@/store/people'
 
 let localappservice = {
   getTeam: () => {
+    let role = "Core Team";
     let team = []
     return new Promise((resolve, reject) => {
-      firebase.firestore.collection("team")
-        .get()
-        .then(doc => {
-          if (doc.empty) {
-            resolve({
-              success: false,
-              data: {}
-            })
-          }
-          if (Object.keys(doc).length > 0) {
-            doc.forEach(res => {
-              team.push(res.data())
-            })
-            resolve({
-              success: true,
-              data: team
-            })
-          }
-        })
-        .catch(e => {
-          reject(e)
-        });
+      resolve({
+        success: true,
+        data: people
+      })
     })
   },
 
   getTeamMember(id) {
+    let found = false
     return new Promise((resolve, reject) => {
-      firebase.firestore.collection("team").doc(id)
-        .get()
-        .then(doc => {
-          if (doc.empty) {
-            resolve({
-              success: false,
-              data: {}
-            })
-          }
-          if (!doc.exists) {
-            resolve({
-              success: false,
-              data: {}
-            })
-          }
-          if (Object.keys(doc).length > 0) {
-            resolve({
-              success: true,
-              data: doc.data()
-            })
-          }
+      people.forEach(person => {
+        if (person.id == id) {
+          found = true
+          resolve({
+            success: true,
+            data: person
+          })
+        }
+      });
+      if (!found) {
+        resolve({
+          success: false,
+          data: {}
         })
-        .catch(e => {
-          reject(e)
-        });
+      }
     })
   },
   getAllEvents: () => {
-    let events = []
     return new Promise((resolve, reject) => {
-      firebase.firestore.collection("events")
-        .get()
-        .then(doc => {
-          if (doc.empty) {
-            resolve({
-              success: false,
-              data: {}
-            })
-          }
-          if (Object.keys(doc).length > 0) {
-            doc.forEach(res => {
-              events.push(res.data())
-            })
-            resolve({
-              success: true,
-              data: events
-            })
-          }
-        })
-        .catch(e => {
-          reject(e)
-        });
+      resolve({
+        success: true,
+        data: customEvents
+      })
     })
   },
 
@@ -99,78 +55,53 @@ let localappservice = {
   },
 
   getEvent: (id) => {
+    let found = false;
     return new Promise((resolve, reject) => {
       customEvents.forEach(event => {
         if (event.id == id) {
+          found = true
           resolve({
             success: true,
             data: event
           })
-        } else {
-          resolve({
-            success: false,
-            data: {}
-          })
         }
       });
+      if (!found) {
+        resolve({
+          success: false,
+          data: {}
+        })
+      }
     });
   },
 
   getSpeaker: (id) => {
+    let found = false
     return new Promise((resolve, reject) => {
-      firebase.firestore.collection("Speakers").doc(id)
-        .get()
-        .then(doc => {
-          if (doc.empty) {
-            resolve({
-              success: false,
-              data: {}
-            })
-          }
-          if (!doc.exists) {
-            resolve({
-              success: false,
-              data: {}
-            })
-          }
-          if (Object.keys(doc).length > 0) {
-            resolve({
-              success: true,
-              data: doc.data()
-            })
-          }
+      people.forEach(person => {
+        if (person.id == id) {
+          found = true
+          resolve({
+            success: true,
+            data: person
+          })
+        }
+      });
+      if (!found) {
+        resolve({
+          success: false,
+          data: {}
         })
-        .catch(e => {
-          reject(e)
-        });
+      }
     })
   },
 
   getAllSpeakers: () => {
-    let speakers = []
     return new Promise((resolve, reject) => {
-      firebase.firestore.collection("Speakers")
-        .get()
-        .then(doc => {
-          if (doc.empty) {
-            resolve({
-              success: false,
-              data: {}
-            })
-          }
-          if (Object.keys(doc).length > 0) {
-            doc.forEach(res => {
-              speakers.push(res.data())
-            })
-            resolve({
-              success: true,
-              data: speakers
-            })
-          }
-        })
-        .catch(e => {
-          reject(e)
-        });
+      resolve({
+        success: true,
+        data: instructors
+      })
     })
   },
 
