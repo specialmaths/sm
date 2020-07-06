@@ -34,7 +34,7 @@
       <v-row justify="center" align="center" class="py-5">
         <v-col md="11" lg="10" sm="11" xs="12" class="py-0 mb-5">
           <coc :data="coc" />
-          <antiHarassmentPolicy :data="config.generalConfig.name" />
+          <!-- <antiHarassmentPolicy :data="config.generalConfig.name" /> -->
         </v-col>
       </v-row>
     </v-container>
@@ -51,7 +51,7 @@ export default {
     aboutHeader: () => import("@/components/about/AboutHeader"),
     communityGuidelines: () => import("@/components/about/CommunityGuidelines"),
     coc: () => import("@/components/about/COC"),
-    antiHarassmentPolicy: () => import("@/components/about/AntiHar")
+    // antiHarassmentPolicy: () => import("@/components/about/AntiHar")
   },
   computed: {
     ...mapState(["config"])

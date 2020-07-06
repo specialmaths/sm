@@ -25,7 +25,7 @@
           <v-row>
             <v-col md="3" lg="3" sm="6" cols="6" class="text-center pa-2">
               <v-icon large style="font-size:300%">mdi-comment</v-icon>
-              <p class="google-font mt-2" style="font-size:130%">Live videos</p>
+              <p class="google-font mt-2" style="font-size:130%">Live Videos</p>
               <p
                 class="google-font"
                 style="font-size:95%"
@@ -71,7 +71,11 @@ export default {
   }),
   methods: {
     getImgUrl(url) {
-      return require("@/assets/img/what-we-do/imo.png");
+      if (url.length > 0) {
+        return require("@/assets/img/what-we-do/" + url);
+      } else {
+        return require("@/assets/img/what-we-do/notFound.png");
+      }
     }
   }
 };

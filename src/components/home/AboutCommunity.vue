@@ -4,26 +4,26 @@
       <v-col cols="12" md="12" lg="12" sm="12" class="pa-0" style="color:white">
         <div class="ma-1">
           <div class="pa-5">
-            <p class="google-font mb-0" style="font-size:150%">Who is this for?</p>
+            <p class="google-font mb-0" style="font-size:150%">About {{config.generalConfig.name}}</p>
             <p
               class="google-font mt-0"
-              style="font-size:95%">
-              This camp is specifically designed for high-performing students who have participated or interested in 
-              participating and acing the national olympiads. Our philosophy is that students will develop stronger 
-              problem solving abilities through intuitive understandng of theorems and concepts as opposed to memorizing 
-              formulas to solve problems through repeated drills. Thus, our trainings are structured to reflect this philosophy.
-            </p>
-            <!-- TODO fix -->
+              style="font-size:95%"
+            >{{config.generalConfig.longDescription}}</p>
             <v-btn
               v-if="checkExistance(config.generalConfig.meetupLink,0)"
-              :href="`https://drive.google.com/file/d/1IZ-XP_9IgXrqJ6qhqXZe5rNRJZE26Sdw/view?usp=sharing`"
+              :href="config.generalConfig.meetupLink"
               target="_blank"
               outlined
               color
               class="ma-0 google-font mb-2"
               style="border-radius:5px;text-transform: capitalize;color:white"
-            >Policy Doc (PDF)</v-btn>&nbsp;
+            >Policy Document</v-btn>&nbsp;
             <br />
+            <router-link
+              to="/about"
+              class="google-font"
+              style="text-decoration:none;color:white"
+            >See More about {{config.generalConfig.name}}</router-link>
           </div>
         </div>
       </v-col>

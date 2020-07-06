@@ -7,7 +7,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     drawer: false,
-    eventDrawer: true,
+    eventDrawer:true,
     config: {
       generalConfig: {
         socialLinks:{}
@@ -35,7 +35,7 @@ export default new Vuex.Store({
       },
       {
         text: 'Camps',
-        to: '/camps',
+        to: '/events',
         icon: 'mdi-assistant',
         meta: {
           showToolbar: true,
@@ -43,11 +43,20 @@ export default new Vuex.Store({
         },
       },
       {
-        text: 'Blog',
-        to: '/blog',
-        icon: 'mdi-blogger',
+        text: 'Team',
+        to: '/team',
+        icon: 'mdi-account-settings',
         meta: {
-          showToolbar: true,
+          showToolbar: false,
+          showBottomNav: false
+        },
+      },
+      {
+        text: 'Speakers',
+        to: '/speakers',
+        icon: 'mdi-assistant',
+        meta: {
+          showToolbar: false,
           showBottomNav: false
         },
       },
@@ -60,6 +69,24 @@ export default new Vuex.Store({
           showBottomNav: true
         },
       },
+      {
+        text: 'Partners',
+        to: '/partners',
+        icon: 'mdi-currency-usd',
+        meta: {
+          showToolbar: false,
+          showBottomNav: false
+        },
+      },
+      {
+        text: 'Blogs',
+        to: '/blogs',
+        icon: 'mdi-blogger',
+        meta: {
+          showToolbar: true,
+          showBottomNav: false
+        },
+      }
     ]
   },
   getters: {
@@ -78,4 +105,5 @@ export default new Vuex.Store({
   },
   modules: {},
   actions: {}
+
 })

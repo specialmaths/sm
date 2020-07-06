@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site":"specialmaths",
+    "site":"myaurapp",
     "public": "dist",
     "rewrites": [ {
         "source": "**",

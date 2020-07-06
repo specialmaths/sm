@@ -2,15 +2,19 @@
     <v-container fluid class="">
         <v-row align="center" justify="center">
             <v-col cols="12" md="10" lg="10" sm="12" class="text-center mb-0" >
-                <p class="google-font mb-1" style="font-weight: 350;font-size:180%" id="upcoming-camps">
+                <p class="google-font mb-1" style="font-weight: 350;font-size:180%">
                     <b>
-                        Upcoming <span style="color: #1a73e8;">Camps</span>
+                        Our
+                        <span style="color: #1a73e8;">Events</span> 
+                        &
+                        <span style="color: #1a73e8;">Meetups</span> 
                     </b> 
                 </p>
                 
-                <p class="google-font mt-0" style="font-size:95%">We have a handful of camps coming up</p>
+                <!-- <p class="google-font mb-0" style="font-size:180%">Our Events & Meetups</p> -->
+                <p class="google-font mt-0" style="font-size:95%">Our camps are specifically designed for high-performing students who have participated or interested in participating and acing the national olympiads. Our philosophy is that students will develop stronger problem solving abilities through intuitive understanding of theorems and concepts as opposed to memorizing formulas to solve problems through repeated drills. Thus, our trainings are structured to reflect this philosophy.</p>
                 <router-link
-                    to="/camps"
+                    to="/events"
                     text
                     color="#4C4A78"
                     class="ma-0 google-font mb-0"
@@ -20,7 +24,7 @@
             <v-col cols="12" md="12" lg="12" sm="12" class="mt-0 px-0">
                <v-container fluid class="px-2 py-0">
                    <v-row v-if="showLoader" class="">
-                       <v-col v-for="i in 2" :key="i" md="3" lg="3" sm="6" cols="6" class="pa-2">
+                       <v-col v-for="i in 4" :key="i" md="3" lg="3" sm="6" cols="6" class="pa-2">
                            <v-sheet
                                 :color="`grey ${theme.isDark ? 'darken-2' : 'lighten-4'}`"
                                 class=""
@@ -33,7 +37,7 @@
                        </v-col>
                    </v-row>
                    <v-row v-else class="no-gutters pa-0 ma-0" >
-                       <v-col md="3" lg="3" sm="6" cols="6" class="pa-1 ma-0" v-for="(item,i) in eventsData.slice(0,2)" :key="i">
+                       <v-col md="3" lg="3" sm="6" cols="6" class="pa-1 ma-0" v-for="(item,i) in eventsData.slice(0,4)" :key="i">
                            <!-- {{item}} -->
                             <eventCard :data="{data:item}" />
                        </v-col>
@@ -45,6 +49,9 @@
                             <p>Events Not Found!</p>
                        </v-col>
                    </v-row>
+
+                
+
                </v-container>
             </v-col>
         </v-row>
@@ -76,23 +83,19 @@ import { mapState } from 'vuex'
         methods:{
             getAllMeetupPastEvents(){
                 this.showLoader = true
-                this.eventsData = [
+                service.getAllMeetupPastEvents(this.config.keysandsecurity.meetup).then(res=>{
+                    if(res.success){
+                        this.eventsData = res.data
+                        this.showLoader = false;
+                    }else{
+                        this.notFoundEventFlag = true;
+                        this.showLoader = false;
+                    }
                     
-                ]
-                this.showLoader = false
-                // service.getAllMeetupPastEvents(this.config.keysandsecurity.meetup).then(res=>{
-                //     if(res.success){
-                //         this.eventsData = res.data
-                //         this.showLoader = false;
-                //     }else{
-                //         this.notFoundEventFlag = true;
-                //         this.showLoader = false;
-                //     }
-                    
-                // }).catch(e=>{
-                //     this.errorMsg = "Issue found with " + e;
-                //     this.showLoader = false;
-                // })
+                }).catch(e=>{
+                    this.errorMsg = "Issue found with " + e;
+                    this.showLoader = false;
+                })
             }
         }
 };

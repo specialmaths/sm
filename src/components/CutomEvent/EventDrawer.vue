@@ -41,7 +41,7 @@
         </v-list-item-content>
       </v-list-item>
     </v-list>
-    <template v-slot:append>
+    <!-- <template v-slot:append>
       <div class="pl-2">
         <p class="subtitle-2 google-font">
           Based on Project
@@ -52,7 +52,7 @@
           >Aura</a>
         </p>
       </div>
-    </template>
+    </template> -->
   </v-navigation-drawer>
 </template>
 
@@ -68,7 +68,7 @@ export default {
         icon: "mdi-information-outline"
       },
       {
-        text: "Speakers",
+        text: "Instructors",
         to: "/speakers",
         icon: "mdi-account-multiple-outline"
       },
@@ -82,9 +82,14 @@ export default {
         to: "/partners",
         icon: "mdi-currency-usd"
       },
+      // {
+      //   text: "Team",
+      //   to: "/team",
+      //   icon: "mdi-account-box-outline"
+      // },
       {
-        text: "Team",
-        to: "/team",
+        text: "Register",
+        to: "/register",
         icon: "mdi-account-box-outline"
       }
     ]

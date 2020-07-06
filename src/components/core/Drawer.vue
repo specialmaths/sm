@@ -5,7 +5,7 @@
         <v-list-item-title
           class="google-font"
           style="font-size:130%"
-        >SMAL</v-list-item-title>
+        >{{config.generalConfig.name || '' }}</v-list-item-title>
       </v-list-item-content>
     </v-list-item>
 
@@ -30,6 +30,18 @@
         </v-list-item-content>
       </v-list-item>
     </v-list>
+    <template v-slot:append>
+      <div class="pl-2">
+        <p class="subtitle-2 google-font">
+          Based on Project
+          <a
+            href="https://github.com/gdg-x/aura/"
+            target="_blank"
+            style="text-decoration:none"
+          >Aura</a>
+        </p>
+      </div>
+    </template>
   </v-navigation-drawer>
 </template>
 

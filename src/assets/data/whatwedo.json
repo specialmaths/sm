@@ -1,7 +1,12 @@
 [
     {
-        "TechName":"International Maths Olympiad",
+        "TechName":"International Math Olympiad",
         "image":"imo.png",
-        "link":"https://imo-official.org"
+        "link":"https://www.imo-official.org/"
+    },
+    {
+        "TechName":"Pan-african Math Olympiad",
+        "image":"pamo.svg",
+        "link":"https://www.africamathunion.org/AMU-pamo-official.php"
     }
 ]

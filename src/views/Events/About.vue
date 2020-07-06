@@ -79,7 +79,7 @@
 
             <p class="google-font mb-0 mt-3">
               <b>Date:</b>
-              {{ eventDetails.date }}
+              {{ eventDetails.date }} - {{ eventDetails.endDate }}
             </p>
             <p class="google-font my-0">
               <b>Time:</b>

@@ -9,7 +9,7 @@
         class="pa-3 py-5 fill-height"
       >
         <p class="google-font mb-0" style="font-size:90%">{{data.date | dateFilter}}</p>
-        <p class="google-font mb-0" style="font-size:120%">{{data.name | summary(15)}}</p>
+        <p class="google-font mb-0" style="font-size:120%">{{data.name | summary(25)}}</p>
         <p class="google-font mb-0" style="font-size:90%">{{data.venue.name | summary(20)}}</p>
         <v-spacer></v-spacer>
         <p class="mb-0 mt-2 google-font" style="color:#1a73e8">See More</p>
@@ -37,7 +37,7 @@
       </v-card-title>
 
       <v-card-text class="pb-5 pt-0">
-        <p class="google-font mb-0" style="font-size:120%">{{data.date}}</p>
+        <p class="google-font mb-0" style="font-size:120%">{{data.date | dateFilter}} - {{data.endDate | dateFilter}}</p>
         <p class="google-font mb-0" style="font-size:110%">{{data.venue.name}}</p>
         <p class="google-font">{{data.time.starttime}} - {{data.time.endtime}}</p>
 
@@ -63,8 +63,8 @@
           class="ma-0 elevation-0 my-2 mr-3"
           dark
           style="text-transform: capitalize;"
-        >Registration Link</v-btn>
-        <v-btn
+        >Register for the Camp</v-btn>
+        <!-- <v-btn
           color="pink"
           v-if="checkExistance(data.links.meetup,0)"
           :href="data.links.meetup"
@@ -81,7 +81,7 @@
           class="ma-0 elevation-0 my-2 mr-3"
           dark
           style="text-transform: capitalize;"
-        >YouTube Live</v-btn>
+        >YouTube Live</v-btn> -->
       </v-card-text>
 
       <v-divider></v-divider>

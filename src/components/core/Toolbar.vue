@@ -3,14 +3,14 @@
       this.$vuetify.theme.dark ? {boxShadow:'0 2px 6px 0 rgba(0,0,0,.12), inset 0 -1px 0 0 #272727'}
       :{ boxShadow: '0 2px 6px 0 rgba(0,0,0,.12), inset  0 -1px 0 0 #dadce0' }">
     <v-app-bar-nav-icon aria-label="Hamburger Menu" @click="toggleDrawer" class="d-md-none d-lg-none"></v-app-bar-nav-icon>
-    <v-toolbar-title class="google-font px-0" style="width:280px">
+    <v-toolbar-title class="google-font px-0" style="width:350px">
       <router-link
         to="/"
         class="google-font"
         aria-label="Communiy homepage"
         style="text-decoration:none;font-size:110%"
         :class="this.$vuetify.theme.dark?'whiteText':'blackText'"
-      >SMAL</router-link>
+      >{{config.generalConfig.name || ""}}</router-link>
     </v-toolbar-title>
     <v-spacer></v-spacer>
 
@@ -38,6 +38,7 @@
       style="background-color:red;border:1px solid red;border-radius:6px;color:white;font-size:90%"
       class="google-font px-2"
     >Offline</v-toolbar-title>
+    <PushNotification class="mr-1" />
     <v-btn icon v-on:click="darkMode" class="ml-1" aria-label="Theme Switch BTN">
       <v-icon v-if="this.$vuetify.theme.dark">mdi-brightness-7</v-icon>
       <v-icon v-else>mdi-brightness-4</v-icon>
@@ -47,11 +48,13 @@
 
 <script>
 import offline from "v-offline";
+import PushNotification from "@/components/core/PushNotifications";
 import { mapState, mapGetters, mapMutations } from "vuex";
 export default {
   name: "Toolbar",
   components: {
     offline,
+    PushNotification
   },
   data: () => ({
     isOffline: false

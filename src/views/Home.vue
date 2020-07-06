@@ -1,6 +1,6 @@
 <template>
   <v-content class="ma-0">
-    
+  
     <v-container fluid class="">
       <v-row justify="center" align="center">
         <v-col md="12" lg="10" sm="11" xs="12" class="">
@@ -25,6 +25,14 @@
       </v-row>
     </v-container>
 
+    <v-container fluid class="pa-0 py-0" v-if="showFeatureEventStatus">
+      <v-row justify="center" align="center" class="py-5" :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'">
+        <v-col md="12" sm="11" lg="10" xs="12" class="py-0">
+          <featureEvents />
+        </v-col>
+      </v-row>
+    </v-container>
+
      <v-container fluid class="pa-0 py-2" v-if="checkExistance(config.keysandsecurity.meetup,0)">
       <v-row justify="center" align="center">
         <v-col md="12" sm="11" lg="10" xs="12" class="py-0">
@@ -33,6 +41,13 @@
       </v-row>
     </v-container>
 
+     <!-- <v-container fluid class="pa-0 py-2 " >
+      <v-row justify="center" align="center">
+        <v-col md="12" lg="10" xs="12" class="py-0">
+          <partners />
+        </v-col>
+      </v-row>
+    </v-container> -->
     <v-container fluid class="pa-0 py-2 hidden-md-and-up" >
       <v-row justify="center" align="center">
         <v-col md="12" lg="10" xs="12" class="py-0">
@@ -56,9 +71,11 @@ export default {
     whatwedo:()=>import('@/components/home/WhatWeDo'),
     AboutCommunity:()=>import('@/components/home/AboutCommunity'),
     events:()=>import('@/components/home/Events'),
+    featureEvents:()=>import('@/components/home/FeaturesEvents'),
+    // partners:()=>import('@/components/common/Partners')
   },
   data:()=>({
-    showFeatureEventStatus: false
+    showFeatureEventStatus:false
   }),
   mounted(){
     this.getFeaturesEventID();

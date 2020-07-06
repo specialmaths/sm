@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="py-0">
     <v-row align="center" class="fill-height">
-      <v-col md="2" sm="4" cols="12" class>
+      <v-col md="3" sm="6" cols="12" class>
         <v-img
           :src="require('@/assets/img/svg/student-colour.svg')"
           :lazy-src="require('@/assets/img/svg/student-colour.svg')"
@@ -14,32 +14,68 @@
           </template>
         </v-img>
       </v-col>
-      <v-col md="10" sm="8" cols="12" class="px-0">
+      <v-col md="9" sm="6" cols="12" class="px-0">
         <p
           class="google-font mb-1"
           :class="$vuetify.theme.dark == true?'dark-font-color':'light-font-color'"
           style="font-weight: 350;font-size:230%"
         >
           <b>
-            Nigerian Mathematics Olympiad 
-            <span style="color: #1a73e8;">Training</span>
+            Nigerian Mathematics Olympiad
+            <span style="color: #1a73e8;">Training</span>.
           </b>
         </p>
-        <p class="google-font mt-0 mb-0" style="font-size:150%">Next generation of Olympians</p>
-        <p class="google-font" style="font-size:100%">
-          Special Maths Academy Limited was founded in 2019 with the aim of training intelligent young minds to be 
-          competitive at the level of the world’s toughest maths contest (IMO). At SMAL, we are passionate about 
-          developing the next generation of mathematicians that will solve world’s most challenging problems.
+        <p class="google-font mt-0 mb-0" style="font-size:150%">{{config.generalConfig.descName}}</p>
+        <p class="google-font" style="font-size:100%">{{config.generalConfig.shortDescription}}</p>
+        <p class="google-font" style="font-size:100%;color:#9e9e9e">
+          <span v-for="(item,i) in config.generalConfig.hashtags" :key="i">
+            <v-chip
+              :href="'https://twitter.com/hashtag/'+item"
+              rel="noreferrer"
+              target="_blank"
+              small
+              class="mr-1"
+            >#{{item}}</v-chip>
+            <!-- &nbsp; -->
+          </span>
         </p>
 
         <v-btn
-          v-if="checkExistance(config.generalConfig.becomemember,0)"
-          :href="'/camps'"
+          v-if="checkExistance(config.generalConfig.upcomingCamps,0)"
+          @click="$router.push(config.generalConfig.upcomingCamps)"
           rel="noreferrer"
-          aria-label="Register"
+          aria-label="Upcoming Camps"
           class="ma-0 google-font elevation-1 primary mr-2"
           style="text-transform: capitalize;border-radius:5px;color:white"
         >Upcoming Camps</v-btn>
+
+        <v-btn
+          v-if="checkExistance(config.generalConfig.subscriptionLink,0)"
+          @click="$router.push(config.generalConfig.subscriptionLink)"
+          aria-label="Subscribe"
+          rounded
+          rel="noreferrer"
+          color="cyan"
+          style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;"
+          outlined
+          class="ml-0"
+          dark
+        >Subscribe</v-btn>
+
+        &nbsp;
+
+        <v-btn
+          v-if="checkExistance(config.generalConfig.learnMoreLink,0)"
+         @click="$router.push(config.generalConfig.learnMoreLink)"
+          aria-label="Learn More"
+          rounded
+          rel="noreferrer"
+          color="cyan"
+          style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;"
+          outlined
+          class="ml-0"
+          dark
+        >Learn More</v-btn>
       </v-col>
     </v-row>
   </v-container>

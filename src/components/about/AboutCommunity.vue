@@ -29,6 +29,10 @@
 
                 <v-btn v-if="checkExistance(data.learnMoreLink, 0)" :href="data.learnMoreLink" target="_blank" rounded color="cyan" style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;" outlined  class="ml-0" dark>Learn More</v-btn>
 
+                &nbsp;
+
+                <v-btn v-if="checkExistance(data.teamLink, 0)" @click="$router.push(data.teamLink)" target="_blank" rounded color="cyan" style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;" outlined  class="ml-0" dark>Meet the Team</v-btn>
+
             </v-col>
         </v-row>
     </v-container>
