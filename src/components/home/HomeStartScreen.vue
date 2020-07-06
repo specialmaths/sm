@@ -41,13 +41,28 @@
         </p>
 
         <v-btn
-          v-if="checkExistance(config.generalConfig.upcomingCamps,0)"
-          @click="$router.push(config.generalConfig.upcomingCamps)"
+          v-if="checkExistance(config.generalConfig.registerLink,0)"
+          :href="config.generalConfig.registerLink"
           rel="noreferrer"
           aria-label="Upcoming Camps"
           class="ma-0 google-font elevation-1 primary mr-2"
           style="text-transform: capitalize;border-radius:5px;color:white"
+        >Register for the July 13th Camp</v-btn>
+
+        <v-btn
+          v-if="checkExistance(config.generalConfig.upcomingCamps,0)"
+          @click="$router.push(config.generalConfig.upcomingCamps)"
+          rel="noreferrer"
+          aria-label="Upcoming Camps"
+          rounded
+          color="cyan"
+          style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;"
+          outlined
+          class="ml-0"
+          dark
         >Upcoming Camps</v-btn>
+
+        &nbsp;
 
         <v-btn
           v-if="checkExistance(config.generalConfig.subscriptionLink,0)"
