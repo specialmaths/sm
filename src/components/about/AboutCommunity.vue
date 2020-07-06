@@ -2,12 +2,13 @@
     <v-container fluid class="py-0 my-0 mt-2 mb-5">
         <v-row class="py-0 my-0" align="center">
             <v-col md="4" sm="12" cols="12" class="py-0 my-0">
-                <v-img
+                <!-- <v-img
                     :src="require('@/assets/img/dontremove/about.png')"
                     :lazy-src="require('@/assets/img/dontremove/about.png')"
                     class=" mb-3"
                     width="100%"
-                >
+                > -->
+                <video-embed :params="{autoplay: 1}" src="https://youtu.be/PluX0n8_XLY">
                     <template v-slot:placeholder>
                         <v-row
                         class="fill-height ma-0"
@@ -17,7 +18,8 @@
                         <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
                         </v-row>
                     </template>
-                </v-img>
+                </video-embed>
+                <!-- </v-img> -->
             </v-col>
             <v-col md="8" sm="12" cols="12" class="py-0 my-0">
                 <!-- {{data}} -->
