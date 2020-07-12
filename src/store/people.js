@@ -192,9 +192,12 @@ const instructors = [
 ]
 
 const team = [
+    "animoku_abdulwahab",
+    "awe_oluwasanya",
+    "mmesomachi",
+    "okeke_williams",
     "princewill_okoroafor",
     "princewill_okoroafor2",
-    "animoku_abdulwahab"
 ]
 
 export { team, instructors, people };
