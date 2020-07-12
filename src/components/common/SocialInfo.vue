@@ -23,6 +23,18 @@
           :href="data.linkedin"
           target="_blank"
         >
+
+          <v-icon small :color="this.$vuetify.theme.dark == true?'white':'#333'">mdi-youtube</v-icon>
+        </v-btn>
+        <v-btn
+          aria-label="social media btn"
+          small
+          class="mt-0 mx-0"
+          icon
+          v-if="checkExistance(data.youtube,0)"
+          :href="data.youtube"
+          target="_blank"
+        >
           <v-icon small :color="this.$vuetify.theme.dark == true?'white':'#333'">mdi-linkedin</v-icon>
         </v-btn>
         <v-btn

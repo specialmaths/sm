@@ -30,6 +30,15 @@
                   <span>Twitter</span>
               </v-tooltip>
 
+              <v-tooltip top v-if="checkExistance(config.generalConfig.socialLinks.youtube,0)">
+                 <template v-slot:activator="{ on }">
+                    <v-btn text icon v-on="on" rel="noreferrer" :href="config.generalConfig.socialLinks.youtube" target="_blank" slot="activator">
+                      <v-icon>mdi-youtube-play</v-icon>
+                    </v-btn>
+                 </template>
+                  <span>YouTube</span>
+              </v-tooltip>
+
               <v-tooltip top v-if="checkExistance(config.generalConfig.socialLinks.instagram,0)">
                  <template v-slot:activator="{ on }">
                     <v-btn text icon v-on="on" rel="noreferrer" :href="config.generalConfig.socialLinks.instagram" target="_blank" slot="activator">
@@ -75,8 +84,8 @@
 
             <v-row justify="start" class="">
               <v-col cols="12" md="3" lg="3" sm="3" class="py-2" >
-                  <p class="google-font mb-0" style="font-size: 140%;font-weight: 300;"><b>About</b></p>
-                  <div v-for="(item,i) in config.footerConfig['About']" :key="i">
+                  <p class="google-font mb-0" style="font-size: 140%;font-weight: 300;"><b>Contests</b></p>
+                  <div v-for="(item,i) in config.footerConfig['Contests']" :key="i">
                         <a :href="item.link" rel="noreferrer" :class="$vuetify.theme.dark?'darkThemeTextLink':'lightThemeTextLink'" class="google-font my-3" target="_blank" style="text-decoration: none;font-size:110%">{{item.linkname}}</a><br>
                   </div>
               </v-col>
@@ -84,13 +93,6 @@
               <v-col cols="12" md="3" lg="3" sm="3" class="py-2" >
                   <p class="google-font mb-0" style="font-size: 140%;font-weight: 300;"><b>Resources</b></p>
                   <div v-for="(item,i) in config.footerConfig['Resources']" :key="i">
-                        <a :href="item.link" rel="noreferrer" :class="$vuetify.theme.dark?'darkThemeTextLink':'lightThemeTextLink'" class="google-font my-3" target="_blank" style="text-decoration: none;font-size:110%">{{item.linkname}}</a><br>
-                  </div>
-              </v-col>
-
-              <v-col cols="12" md="3" lg="3" sm="3" class="py-2" >
-                  <p class="google-font mb-0" style="font-size: 140%;font-weight: 300;"><b>Developer Console</b></p>
-                  <div v-for="(item,i) in config.footerConfig['Developer Console']" :key="i">
                         <a :href="item.link" rel="noreferrer" :class="$vuetify.theme.dark?'darkThemeTextLink':'lightThemeTextLink'" class="google-font my-3" target="_blank" style="text-decoration: none;font-size:110%">{{item.linkname}}</a><br>
                   </div>
               </v-col>

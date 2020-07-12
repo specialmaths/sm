@@ -21,7 +21,7 @@ const customEvents = [
         active: true,
         agenda: [
             {
-                des: "In this webinar, you are going to deep dive into the VS Code features which will ultimately speed up the development cycle. In VS Code, there are various features and plugins which are used by pro developers to speed up their development pace.", 
+                des: "In this class, we will drill you through important Olympiad topics.",
                 endtime: "10:30",
                 starttime: "09:30",
                 title: "Welcome Keynote 2"
