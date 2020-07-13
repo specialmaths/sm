@@ -47,7 +47,7 @@
           aria-label="Upcoming Camps"
           class="ma-0 google-font elevation-1 primary mr-2"
           style="text-transform: capitalize;border-radius:5px;color:white"
-        >Register for the July 13th Camp</v-btn>
+        >Register for the Aug. 3rd Camp</v-btn>
 
         <v-btn
           v-if="checkExistance(config.generalConfig.upcomingCamps,0)"
