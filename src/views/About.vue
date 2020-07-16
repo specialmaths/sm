@@ -17,7 +17,9 @@
       </v-row>
     </v-container>
 
-    <v-container fluid class="pa-0 py-0 my-0">
+    <Team />
+
+    <!-- <v-container fluid class="pa-0 py-0 my-0">
       <v-row
         justify="center"
         align="center"
@@ -28,16 +30,16 @@
           <communityGuidelines :data="communityGudielines" />
         </v-col>
       </v-row>
-    </v-container>
+    </v-container> -->
 
-    <v-container fluid class="pa-0 py-0 my-0">
+    <!-- <v-container fluid class="pa-0 py-0 my-0">
       <v-row justify="center" align="center" class="py-5">
         <v-col md="11" lg="10" sm="11" xs="12" class="py-0 mb-5">
           <coc :data="coc" />
-          <!-- <antiHarassmentPolicy :data="config.generalConfig.name" /> -->
+          <antiHarassmentPolicy :data="config.generalConfig.name" />
         </v-col>
       </v-row>
-    </v-container>
+    </v-container> -->
   </v-content>
 </template>
 
@@ -49,9 +51,10 @@ export default {
   components: {
     aboutCommunity: () => import("@/components/about/AboutCommunity"),
     aboutHeader: () => import("@/components/about/AboutHeader"),
-    communityGuidelines: () => import("@/components/about/CommunityGuidelines"),
-    coc: () => import("@/components/about/COC"),
+    // communityGuidelines: () => import("@/components/about/CommunityGuidelines"),
+    // coc: () => import("@/components/about/COC"),
     // antiHarassmentPolicy: () => import("@/components/about/AntiHar")
+    Team: () => import("@/views/Team"),
   },
   computed: {
     ...mapState(["config"])
