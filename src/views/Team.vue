@@ -34,13 +34,13 @@
              </v-row>
         </v-container>
 
-        <v-container fluid class="pa-0" v-if="OrganizingTeam.length>0">
+        <!-- <v-container fluid class="pa-0" v-if="OrganizingTeam.length>0">
              <v-row justify="center" align="center" class="py-3">
                 <v-col md="12" lg="10" sm="11" xs="12" class="pt-3 ">
                   <OrgainizingTeam :data="OrganizingTeam"/>
                 </v-col>
              </v-row>
-        </v-container>
+        </v-container> -->
         <v-container fluid class="pa-0">
              <v-row justify="center" align="center" class="py-3" :class="this.$vuetify.theme.dark == true?'black':''">
                <v-col v-if="!loader && notFound && OrganizingTeam.length <=0 && CoreTeam.length<=0" md="12" lg="12" sm="12" cols="12" class="text-center">
@@ -73,7 +73,7 @@ export default {
     components:{
         TeamHeader:()=>import('@/components/team/TeamHeader'),
         CoreTeam:()=>import('@/components/team/CoreTeam'),
-        OrgainizingTeam:()=>import('@/components/team/OrganizingTeam')
+        // OrgainizingTeam:()=>import('@/components/team/OrganizingTeam')
     },
     data:() =>({
       loader:true,
