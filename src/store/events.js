@@ -12,7 +12,7 @@ const customEvents = [
             googlemapsurl: "Somevanuelink",
             name: "Online via Zoom"
         },
-        des: "For Junior Secondary Students. This camp is going to cover Number Theory, Algebra, Combinatorics, Algebra.",
+        des: "The camp program will be in two categories, namely: Pre-Olympiad and Intermediate Olympiad. After the student has registered, he/she will receive a confirmation email together with other details on how to enroll in the online classroom. All new students will be be required to take a sample test to determine their appropriate level. This will be provided as part of the email they will be receiving upon registration and confirmation of payment. However, all the students who have participated in any of our previous camps will be placed automatically in their respective classes appropriate to their performances. The camp is set to commence on 3rd of August, 2020 and would last for 4 weeks with additional one free-week for exams, seminars and closing ceremony. The camp is expected to end on 5th September, 2020. The opening ceremony for the camp will be held on 3rd of August, 2020 at 4:00pm on Zoom. More details will be provided through the emails each participant will receive upon completing the registration.",
         image: "",
         time: {
             endtime: "14:30",
