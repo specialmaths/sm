@@ -248,7 +248,7 @@ const people = [
     },
     {
         active: true,
-        bio: "",
+        bio: "Henry Aniobi is a graduate of Mathematics from the University of Waterloo. He has represented Nigeria five times in the IMO winning four bronze medals and three times in the PAMO winning two gold medals (perfect scores) and one silver medal. He is passionate about mathematics but even more passionate about morality and about whether or not technology helps or hinders people from being more virtuous and God-fearing people of faith and prayer.",
         createdBy: {
             id: "princewill_okoroafor",
             name: "Princewill Okoroafor"
