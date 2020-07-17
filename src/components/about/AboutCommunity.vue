@@ -25,6 +25,7 @@
             <v-col md="8" sm="12" cols="12" class="py-0 my-0">
                 <!-- {{data}} -->
                 <p class="google-font mt-0" style="font-size:110%">{{data.longDescription}}</p>
+                <p class="google-font mt-0" style="font-size:110%">{{data.longMission}}</p>
                 <br>
                 <v-btn v-if="checkExistance(data.becomemember, 0)" :href="data.becomemember" target="_blank" class="ma-0 google-font elevation-1 primary" style="text-transform: capitalize;border-radius:5px;color:white">Become a Member</v-btn>
 

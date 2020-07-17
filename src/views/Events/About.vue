@@ -165,6 +165,43 @@
                 >Youtube Live</v-btn
               >
             </div>
+
+            <!-- Categories -->
+            <h3 :class=" this.$vuetify.theme.dark ? 'white--text' : 'grey--text text--darken-3' " class="google-font mb-0" style="font-size:180%">
+              Categories
+            </h3>
+            <p class="google-font mb-3" style="font-size:110%">{{ eventDetails.categories }}</p>
+
+            <!-- Payment -->
+            <h3 :class=" this.$vuetify.theme.dark ? 'white--text' : 'grey--text text--darken-3' " class="google-font mb-0" style="font-size:180%">
+              Payment
+            </h3>
+            <p class="google-font mb-3" style="font-size:110%">{{ eventDetails.payment }}</p>
+
+            <!-- Testimonial -->
+            <h3 :class=" this.$vuetify.theme.dark ? 'white--text' : 'grey--text text--darken-3' " class="google-font mb-0" style="font-size:180%">
+              Testimonials
+            </h3>
+            <p class="google-font mb-3" style="font-size:110%">{{ eventDetails.testimonials }}</p>
+
+            <!-- Syllabus -->
+            <h3 :class=" this.$vuetify.theme.dark ? 'white--text' : 'grey--text text--darken-3' " class="google-font mb-0" style="font-size:180%">
+              Syllabus
+            </h3>
+            <p class="google-font mb-3" style="font-size:110%">{{ eventDetails.syllabus }}</p>
+
+            <!-- Committments -->
+            <h3 :class=" this.$vuetify.theme.dark ? 'white--text' : 'grey--text text--darken-3' " class="google-font mb-0" style="font-size:180%">
+              Committments
+            </h3>
+            <p class="google-font mb-3" style="font-size:110%">{{ eventDetails.commitments }}</p>
+
+            <!-- Contact -->
+            <h3 :class=" this.$vuetify.theme.dark ? 'white--text' : 'grey--text text--darken-3' " class="google-font mb-0" style="font-size:180%">
+              Contact
+            </h3>
+            <p class="google-font mb-3" style="font-size:110%">{{ eventDetails.contact }}</p>
+            
           </v-container>
         </v-col>
       </v-row>

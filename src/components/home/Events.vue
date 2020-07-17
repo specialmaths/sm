@@ -12,7 +12,7 @@
                 </p>
                 
                 <!-- <p class="google-font mb-0" style="font-size:180%">Our Events & Meetups</p> -->
-                <p class="google-font mt-0" style="font-size:95%">Our camps are specifically designed for high-performing students who have participated or interested in participating and acing the national olympiads. Our philosophy is that students will develop stronger problem solving abilities through intuitive understanding of theorems and concepts as opposed to memorizing formulas to solve problems through repeated drills. Thus, our trainings are structured to reflect this philosophy.</p>
+                <p class="google-font mt-0" style="font-size:95%">This camp is specifically designed for high-performing junior secondary school students who are passionate about building their mathematical foundation to be able to participate and ace the Nigerian mathematics olympiad. Our philosophy is that students will develop stronger problem solving abilities through intuitive understanding of theorems and concepts as opposed to memorizing formulas to solve problems through repeated drills. Thus, our trainings are structured to reflect this philosophy.</p>
                 <router-link
                     to="/events"
                     text
