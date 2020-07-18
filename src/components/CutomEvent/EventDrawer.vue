@@ -25,7 +25,7 @@
 
       <v-divider class="my-2"></v-divider>
 
-      <v-list-item to="/about" target="_blank" class="google-font my-0 py-0" color="primary">
+      <!-- <v-list-item to="/about" target="_blank" class="google-font my-0 py-0" color="primary">
         <v-list-item-content>
           <v-list-item-title v-text="'Community Guidlines'" />
         </v-list-item-content>
@@ -34,7 +34,7 @@
         <v-list-item-content>
           <v-list-item-title v-text="'Code of Conduct'" />
         </v-list-item-content>
-      </v-list-item>
+      </v-list-item> -->
       <v-list-item to="/about" target="_blank"  class="google-font my-0 py-0" color="primary">
         <v-list-item-content>
           <v-list-item-title v-text="'About '+ config.generalConfig.name || ''" />
@@ -77,21 +77,21 @@ export default {
         to: "/schedule",
         icon: "mdi-television-guide"
       },
-      {
-        text: "Partners",
-        to: "/partners",
-        icon: "mdi-currency-usd"
-      },
+      // {
+      //   text: "Partners",
+      //   to: "/partners",
+      //   icon: "mdi-currency-usd"
+      // },
       // {
       //   text: "Team",
       //   to: "/team",
       //   icon: "mdi-account-box-outline"
       // },
-      {
+      /* {
         text: "Register",
         to: "/register",
         icon: "mdi-account-box-outline"
-      }
+      } */
     ]
   }),
   computed: {
