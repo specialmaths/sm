@@ -28,23 +28,83 @@ const customEvents = [
         active: true,
         agenda: [
             {
-                des: "In this class, we will drill you through important Olympiad topics.",
+                des: "More Variables (CH 4)",
                 endtime: "10:30",
                 starttime: "09:30",
-                title: "Welcome Keynote 2"
+                title: "Pre-Olympiad Algebra"
             },
             {
-                des: "",
+                des: "Mult-variable Linear Equations (CH 5)",
+                endtime: "10:30",
+                starttime: "09:30",
+                title: "Pre-Olympiad Algebra"
+            },
+            {
+                des: "Primes and Composites (CH 2)",
                 endtime: "16:58", 
                 starttime: "15:57",
-                title: ""
+                title: "Pre-Olympiad Number Theory"
             },
             {
-                des: "",
+                des: "Multiples and Divisors (CH 3)",
+                endtime: "16:58", 
+                starttime: "15:57",
+                title: "Pre-Olympiad Number Theory"
+            },
+            {
+                des: "Basic Counting Techniques (CH 2)",
                 endtime: "16:58",
                 starttime: "15:57",
-                title: ""
-            }
+                title: "Pre-Olympiad Combinatorics"
+            },
+            {
+                des: "Inequalities (AM-GM, Cauchy) (CH 12)",
+                endtime: "16:58", 
+                starttime: "15:57",
+                title: "Intermediate Algebra"
+            },
+            {
+                des: "Sequence and Series (CH 17)",
+                endtime: "16:58", 
+                starttime: "15:57",
+                title: "Intermediate Algebra"
+            },
+            {
+                des: "More Inequalities (Means, Rearrangement, etc) (CH 18)",
+                endtime: "16:58", 
+                starttime: "15:57",
+                title: "Intermediate Algebra"
+            },
+            {
+                des: "Functional Equations (CH 19)",
+                endtime: "16:58", 
+                starttime: "15:57",
+                title: "Intermediate Algebra"
+            },
+            {
+                des: "Review of Counting & Probability Basics (CH 1)",
+                endtime: "16:58",
+                starttime: "15:57",
+                title: "Intermediate Combinatorics"
+            },
+            {
+                des: "A piece of PIE (CH 3)",
+                endtime: "16:58",
+                starttime: "15:57",
+                title: "Intermediate Combinatorics"
+            },
+            {
+                des: "Constructive Counting and 1-1 Correspondences (CH 4)",
+                endtime: "16:58",
+                starttime: "15:57",
+                title: "Intermediate Combinatorics"
+            },
+            {
+                des: "The Pigeonhole Principle (CH 5)",
+                endtime: "16:58",
+                starttime: "15:57",
+                title: "Intermediate Combinatorics"
+            },
         ],
         createdBy: {
             id: "princewill_okoroafor",
