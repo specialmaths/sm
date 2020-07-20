@@ -123,7 +123,7 @@ const people = [
         email: "",
         id: "pius_onah",
         company: {name: "Microsoft", url: ""},
-        image: "https://www.imo-official.org/photos/2011/ThumbImage4608.jpg",
+        image: "/img/pius.jpeg",
         lastUpdatedBy: {
             id: "",
             name: ""
