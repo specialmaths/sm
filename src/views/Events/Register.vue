@@ -6,7 +6,7 @@
                 <v-col md="12" sm="12" cols="12" class="py-0 my-0 mb-5 mt-5">
                 <h2 :class="this.$vuetify.theme.dark?'white--text':'grey--text text--darken-3'" class="google-font mb-5 mt-5">Registration Form</h2>
                 <p class="google-font mt-1 mb-0" style="font-size:110%">
-                    Please note that for the registration to be complete, you have to fill out the form and pay the 20,000 camp fee
+                    Please note that for the registration to be complete, you have to fill out the form and pay the 15,000 camp fee
                 </p>
   <v-form
     ref="form"
