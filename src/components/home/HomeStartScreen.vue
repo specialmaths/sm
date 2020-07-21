@@ -3,8 +3,8 @@
     <v-row align="center" class="fill-height">
       <v-col md="3" sm="6" cols="12" class>
         <v-img
-          :src="require('@/assets/img/svg/student-colour.svg')"
-          :lazy-src="require('@/assets/img/svg/student-colour.svg')"
+          :src="require('@/assets/logo.png')"
+          :lazy-src="require('@/assets/logo.png')"
           width="100%"
         >
           <template v-slot:placeholder>

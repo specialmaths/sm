@@ -77,6 +77,16 @@ export default {
         to: "/schedule",
         icon: "mdi-television-guide"
       },
+      {
+        text: "Testimonials",
+        to: "/testimonials",
+        icon: "mdi-account-multiple-outline"
+      },
+      {
+        text: "Contact",
+        to: "/contact",
+        icon: "mdi-account-box-outline"
+      },
       // {
       //   text: "Partners",
       //   to: "/partners",

@@ -8,8 +8,8 @@
                     class=" mb-3"
                     width="100%"
                 > -->
-                <iframe height="230px" width="330px" src="https://www.youtube.com/embed/PluX0n8_XLY?autoplay=1&cc_load_policy=1&controls=0&&modestbranding=1&loop=1" frameborder="0" allowfullscreen>
-                <!-- <video-embed :params="{autoplay: 1}" src="https://youtu.be/PluX0n8_XLY"> -->
+                <iframe height="300px" width="430px" src="https://www.youtube.com/embed/zgILHY3MvFE?autoplay=1&cc_load_policy=1&controls=0&&modestbranding=1&loop=1" frameborder="0" allowfullscreen> </iframe>
+                <!-- <video-embed :params="{autoplay: 1}" src="https://www.youtube.com/embed/zgILHY3MvFE"></video-embed> -->
                     <!-- <template v-slot:placeholder>
                         <v-row
                         class="fill-height ma-0"
@@ -19,7 +19,6 @@
                         <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
                         </v-row>
                     </template> -->
-                </iframe>
                 <!-- </v-img> -->
             </v-col>
             <v-col md="8" sm="12" cols="12" class="py-0 my-0">

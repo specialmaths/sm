@@ -117,6 +117,24 @@ const routes = [{
         }
       },
       {
+        // when /event/:id/ is matched
+        path: 'testimonials',
+        name:"CustomEventTestimonials",
+        component: ()=> import(/* webpackChunkName: "CustomEventRegister" */ '../views/Events/Testimonials.vue'),
+        meta: {
+          isEvent:true
+        }
+      },
+      {
+        // when /event/:id/ is matched
+        path: 'contact',
+        name:"CustomEventContact",
+        component: ()=> import(/* webpackChunkName: "CustomEventRegister" */ '../views/Events/Contact.vue'),
+        meta: {
+          isEvent:true
+        }
+      },
+      {
         path: '',
         name: 'redirectCustomEvent',
         redirect: {

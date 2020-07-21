@@ -9,7 +9,7 @@
               class="google-font mt-0"
               style="font-size:95%"
             >{{config.generalConfig.longDescription}}</p>
-            <v-btn
+            <!-- <v-btn
               v-if="checkExistance(config.generalConfig.meetupLink,0)"
               :href="config.generalConfig.meetupLink"
               target="_blank"
@@ -17,8 +17,8 @@
               color
               class="ma-0 google-font mb-2"
               style="border-radius:5px;text-transform: capitalize;color:white"
-            >Policy Document</v-btn>&nbsp;
-            <br />
+            >Policy Document</v-btn>&nbsp; -->
+            <!-- <br /> -->
             <router-link
               to="/about"
               class="google-font"

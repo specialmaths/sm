@@ -159,7 +159,7 @@ const people = [
         email: "",
         id: "williams_okeke",
         company: {name: "", url: ""},
-        image: "https://imo-official.org/photos/Tempupload/Thumb_NGA_20160513-071653-371.jpg",
+        image: "/img/williams.jpeg",
         lastUpdatedBy: {
             id: "",
             name: ""

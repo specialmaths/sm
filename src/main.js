@@ -6,10 +6,10 @@ import store from './store'
 import vuetify from './plugins/vuetify';
 import generalFunctions from './functions/generalFunctions'
 import './style.css'
-// import Embed from 'v-video-embed'
+import Embed from 'v-video-embed'
 
-// // global register
-// Vue.use(Embed);
+// global register
+Vue.use(Embed);
 
 
 Vue.config.productionTip = false
