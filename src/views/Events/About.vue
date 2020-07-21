@@ -187,6 +187,7 @@
               Payment
             </h3>
             <p class="google-font mb-3" style="font-size:110%">{{ eventDetails.payment }}</p>
+            <p class="google-font mb-3" style="font-size:110%"><b>Account Name: SPECIAL MATHS ACADEMY LIMITED, Account Number: Zenith Bank 1017364068</b></p>
 
             <!-- Awards -->
             <h3 :class=" this.$vuetify.theme.dark ? 'white--text' : 'grey--text text--darken-3' " class="google-font mb-0" style="font-size:180%">
