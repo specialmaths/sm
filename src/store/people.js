@@ -110,7 +110,7 @@ const people = [
     },
     {
         active: true,
-        bio: "Graduate of Mathematics from the University of Cambridge and has been actively involved in the Olympiads for over ten years. First Nigerian IMO bronze medalist, one-time silver and one-time gold medalist at PAMO. Two-time deputy team leader at IMO and two-time deputy team leader at PAMO. Team trainer for the Nigerian IMO team for the past 4 years. He currently works as an Assistant research fellow at National Mathematical Centre and acts as a resource person for Special Maths Academy Limited.",
+        bio: "Graduate of Mathematics from the University of Cambridge and has been actively involved in the Olympiads for over ten years. First Nigerian IMO bronze medalist, one-time silver and one-time gold medalist at PAMO. Two-time deputy team leader at IMO and two-time deputy team leader at PAMO. Team trainer for the Nigerian IMO team for the past 4 years. He currently works as an Assistant research fellow at National Mathematical Centre and acts as a resource person for Special Maths Academy.",
         createdBy: {
             id: "princewill_okoroafor",
             name: "Princewill Okoroafor"
