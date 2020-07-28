@@ -27,7 +27,7 @@ const config = [
     data: {
       links: {
         Contests: [
-          {linktype: "About", link: "http://www.imo-official.com", linkname: "IMO"},
+          {linktype: "About", link: "http://www.imo-official.org", linkname: "IMO"},
           {linktype: "About", link: "https://www.africamathunion.org/AMU-pamo-official.php", linkname: "PAMO"},
         ],
         'Footer End Session Link': [
@@ -37,7 +37,7 @@ const config = [
         ],
         Resources: [
           {linkname: "Art of Problem Solving", linktype: "Resources", link: "aops.com"},
-          {linktype: "Resources", link: "http://www.nmcabuja.org/", linkname: "National Mathematics Center"}
+          {linktype: "Resources", link: "https://nmc.edu.ng/About", linkname: "National Mathematics Center"}
         ]
       }
     }
