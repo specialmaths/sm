@@ -31,7 +31,7 @@ const people = [
             linkedin: "",
             medium: "",
             twitter: "",
-            web: "me.pokoroafor.org",
+            web: "https://me.pokoroafor.org",
         },
         uid: "F1nj86BQKzgCA8BDcnm6DMMBKq83",
         visible: true
