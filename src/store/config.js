@@ -36,7 +36,7 @@ const config = [
           {link: "/about", linkname: "Community Guidelines", linktype: "Footer End Session Link"}
         ],
         Resources: [
-          {linkname: "Art of Problem Solving", linktype: "Resources", link: "aops.com"},
+          {linkname: "Art of Problem Solving", linktype: "Resources", link: "http://aops.com/"},
           {linktype: "Resources", link: "https://nmc.edu.ng/About", linkname: "National Mathematics Center"}
         ]
       }
